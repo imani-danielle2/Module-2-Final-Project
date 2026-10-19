@@ -29,7 +29,8 @@ h1 {
   text-align: center;
 }
 
-.banner{
-
+.banner {
+align-items: center;
+display: flex;
 }
 }
