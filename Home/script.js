@@ -1,9 +1,42 @@
+
+
+const banner = document.getElementById('banner');
 const form = document.getElementById('signup-form');
-
 const thankYou = document.getElementById('thank-you');
+const header = document.getElementById("header1");
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  form.style.display = 'none';
-  thankYou.style.display = 'block';
-});
+banner.style.display= "flex";
+banner.style.justifyContent = "center";
+banner.style.alignItems = "center";
+
+header.style.display= "flex";
+header.style.justifyContent = "center";
+header.style.alignItems = "center";
+header.style.border= "black";
+
+header.style.alignItems= "baseline";
+header.style.textAlign = "center";
+header.style.color = "dark green";
+header.style.textDecorationColor="green";
+
+form.style.alignContent= "center";
+
+if (form && thankYou) {
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    });
+
+    if (response.ok) {
+      form.style.display = 'none';
+      thankYou.style.display = 'block';
+      thankYou.style.color= "green";
+    } else {
+      alert('Something went wrong. Please try again.');
+    }
+  });
+}

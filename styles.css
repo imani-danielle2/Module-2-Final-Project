@@ -1,26 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('office image1.jpg');
-    background-size:contain ;       
-    background-position: center;  
-
-
-}
+  }
 
 p {
     text-align: center;
     margin: 0 10%;
-table-layout: fixed;
-font-family:Georgia, 'Times New Roman', Times, serif; 
+    table-layout: fixed;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
 }
+h1{
+    text-align: center;
+    margin: 0 10%;}
 
-#nav-links {
-
-    display: flex;
-    justify-content: center;
-    align-items:baseline
-   
-}
 header{
   display: flex; 
   justify-content: center; 
