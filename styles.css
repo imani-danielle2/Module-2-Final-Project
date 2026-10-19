@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('office image1.jpg');
+    background-size:contain ;       
+    background-position: center;  
+
+
+}
+
+p {
+    text-align: center;
+    margin: 0 10%;
+table-layout: fixed;
+font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+
+#nav-links {
+
+    display: flex;
+    justify-content: center;
+    align-items:baseline
+   
+}
+header{
+  display: flex; 
+  justify-content: center; 
+  gap: 40px; 
+  align-items: center; 
+  padding: 20px; 
+  border: 2px solid #333; 
+  border-radius: 8px;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+}
+a {
+    text-align: center;
+    line-height: 1.5;
+  text-decoration: none;
+  padding: 1%;
+    color: rgb(129, 22, 22);
+         margin: 0 5%;
+font-family:Georgia, 'Times New Roman', Times, serif; 
+    border: 1px solid black;
+}
+p{
+    color: rgb(129, 22, 22);
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
