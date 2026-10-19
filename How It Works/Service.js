@@ -1,4 +1,4 @@
-let header = document.getElementsByClassName(a)
+let header = document.getElementsByClassName("main-header")
 
 
 header.style.display= "flex";
