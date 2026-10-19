@@ -7,30 +7,92 @@
     <head>
     <link rel="stylesheet" href="styles.css">
 </head>
-</head>
+<header class="site-header">
+ 
+  <nav class="nav-links">
+    <a href="#how-it-works">How It Works</a>
+    <a href="about">About</a>
+    <a href="#signup-form" class="nav-button">Apply Now</a>
+  </nav>
+</header>
+
 <body>
 
-    <p> Your course, built and ready to sell. </p>
-    <p> Most setup help gets your pages online. That's the easy part. The hard part is turning what's in your head into lessons people can follow.
+    <h2> Partnering with coaches, educators, and creators to build courses people actually finish.</h2>
+   <div id="banner"> <img src="Partner Banner.png" alt="hero banner" align-item="center" height="470" width=""  >
+</div>
+    
 
-That's what I do. Every course I build has clear steps, the right order, and checks that show students when they've got it. 
-So your course looks polished and people actually finish it. </p>
+    <p> Tell me about you and your course goals, and if we’re a good fit, we’ll map out your course as partners from day one.</p>
 
-
-<h3> Get it out of your head and into an academy. </h3>
- 
 <p> For coaches, educators, and creators ready to stop “working on the course” and start selling it. </p>
- <button id="= register Button"> Yes, Build It For Me </button>
-    <button id="= portfolio Button"> My Portfolio </button>
+ <!-- <button id="= register Button"> Yes, Build It For Me </button>
+    <button id="= portfolio Button"> My Portfolio </button> -->
 
-<h2> Select your course build: </h2>
-<p id="Course Starter">
-Course Starter — Outline, module structure, branded course pages, and platform setup. Best if you already have your content and just need it organized and built.
-</p>
-<p id="Signature Couurse">Signature Course Build — Everything in Starter, plus lesson content, quizzes, and downloadable worksheets. Best if you have the expertise but need the full course created.
-</p>
+<form id="signup-form" action="https://formspree.io/f/xgodrovj" method="POST">
+<h2> Apply To Partner With Me:</h2>
+<p> Submit Your Information Below</p>
+      <label for="name">Your Name</label>
+  <input type="text" id="name" name="name" required>
+<br>
+  <label for="email">Your Email</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <br>
+  <br>
 
-<p id="Launch-Ready">Launch-Ready Package — Everything in Signature, plus a launch email sequence and post-launch support. Best if you want to go from idea to selling with nothing left on your plate. </h2>
-</p>
+  <label>What would you love support with? (Choose all that apply)</label>
+<div>
+  <p><strong>Course Creation</strong></p>
+  
+  <input type="checkbox" name="partner" value="course-outline"> Turning my expertise into a course outline</label><br>
+  <label><input type="checkbox" name="partner" value="modules-lessons"> Organizing my content into modules and lessons</label><br>
+  <label><input type="checkbox" name="partner" value="lesson-scripts"> Writing lesson scripts and talk tracks</label><br>
+  <label><input type="checkbox" name="partner" value="quizzes"> Creating quizzes and knowledge checks</label><br>
+  <label><input type="checkbox" name="partner" value="resources"> Designing worksheets, checklists, and templates</label><br>
+</div>
+
+<div>
+  <p><strong>Course Setup & Design</strong></p>
+  <label><input type="checkbox" name="partner" value="platform-setup"> Setting up my course platform</label><br>
+  <label><input type="checkbox" name="partner" value="branding"> Branding my course pages</label><br>
+  <label><input type="checkbox" name="partner" value="premium-experience"> Making my course feel premium and easy to navigate</label><br>
+</div>
+
+<div>
+  <p><strong>Launch & Marketing</strong></p>
+  <label><input type="checkbox" name="partner" value="sales-page"> Writing my course sales page</label><br>
+  <label><input type="checkbox" name="partner" value="email-sequences"> Creating launch and welcome email sequences</label><br>
+  <label><input type="checkbox" name="partner" value="launch-strategy"> Planning my launch strategy</label><br>
+  <label><input type="checkbox" name="partner" value="promo-content"> Content ideas to promote my course</label><br>
+</div>
+
+<div>
+  <p><strong>Student Experience & Growth</strong></p>
+  <label><input type="checkbox" name="partner" value="completion"> Improving completion and engagement</label><br>
+  <label><input type="checkbox" name="partner" value="course-refresh"> Updating or refreshing an existing course</label><br>
+  <label><input type="checkbox" name="partner" value="membership-cohort"> Turning my course into a membership or cohort program</label><br>
+  <label><input type="checkbox" name="partner" value="ai-tools"> Adding AI tools to my course or workflow</label><br>
+
+  </div>
+  
+  <div>
+  <p><strong>Other</strong></p>
+  <label><input type="checkbox" name="partner" value="other"> Something else:</label>
+  <input type="text" name="support_other" placeholder="Tell me more">
+</div>
+<br>
+
+<br>
+
+<br>
+  <button type="submit">Submit</button>
+</form>    
+
+<div id="thank-you" style="display: none;">
+  <h2>Application received!</h2>
+  <p>I'll reach out within 24–48 hours to schedule our partnership call.</p>
+</div>
+<script>  src= "script.js"</script>
 </body>
 </html>

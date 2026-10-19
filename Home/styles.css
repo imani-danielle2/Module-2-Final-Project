@@ -1,15 +1,35 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url('office image1.jpg');
-    background-size: cover;       /* Scales the image to cover the entire screen */
-    background-position: center;   /* Centers the image on the page */
-    background-repeat: no-repeat; /* Prevents the image from tiling/repeating */
-    background-attachment: fixed;  /* Optional: keeps image static while scrolling */
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
     
 
 }
 
+.ServiceImage {
+    display: flex;
+  
+    align-items: center;
+    min-height: 100vh;      
+
+}
 
 h1 {
     color: blue;
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0A0A0A;
+  text-align: center;
+}
+
+.banner{
+
+}
 }
