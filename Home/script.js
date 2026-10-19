@@ -3,25 +3,26 @@
 const banner = document.getElementById('banner');
 const form = document.getElementById('signup-form');
 const thankYou = document.getElementById('thank-you');
-const header = document.getElementById("header1");
+const header = document.getElementById("main-header");
+const styleElement = document.createElement('style');
 
-const bodyText = document.querySelector(".body"); 
+banner.style.display = 'flex';
+banner.style.justifyContent = 'center';
+banner.style.alignItems = 'center';
 
-banner.style.display= "flex";
-banner.style.justifyContent = "center";
-banner.style.alignItems = "center";
+if (header) {
+  header.style.display = 'flex';
+  header.style.justifyContent = 'center';
+  header.style.alignItems = 'center';
+  header.style.border = '1px solid black'; 
+}
+if (form) {
+  form.style.display = 'flex';
+  form.style.flexDirection = 'column';
+  form.style.alignItems = 'center';
+}
 
-header.style.display= "flex";
-header.style.justifyContent = "center";
-header.style.alignItems = "center";
-header.style.border= "black";
-
-
-form.style.display= "flex";
-banner.style.justifyContent = "center";
-banner.style.alignItems = "center";
-form.style.alignContent= "center";
-
+// form submission 
 if (form && thankYou) {
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -35,7 +36,7 @@ if (form && thankYou) {
     if (response.ok) {
       form.style.display = 'none';
       thankYou.style.display = 'block';
-      thankYou.style.color= "green";
+      thankYou.style.color = 'green';
     } else {
       alert('Something went wrong. Please try again.');
     }
