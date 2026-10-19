@@ -5,6 +5,8 @@ const form = document.getElementById('signup-form');
 const thankYou = document.getElementById('thank-you');
 const header = document.getElementById("header1");
 
+const bodyText = document.querySelector(".body"); 
+
 banner.style.display= "flex";
 banner.style.justifyContent = "center";
 banner.style.alignItems = "center";
@@ -14,11 +16,10 @@ header.style.justifyContent = "center";
 header.style.alignItems = "center";
 header.style.border= "black";
 
-header.style.alignItems= "baseline";
-header.style.textAlign = "center";
-header.style.color = "dark green";
-header.style.textDecorationColor="green";
 
+form.style.display= "flex";
+banner.style.justifyContent = "center";
+banner.style.alignItems = "center";
 form.style.alignContent= "center";
 
 if (form && thankYou) {

@@ -41,3 +41,45 @@ p{
     color: rgb(129, 22, 22);
     font-family:Georgia, 'Times New Roman', Times, serif; 
 }
+
+/* Container for the navigation bar */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+/* Layout for the list items */
+.nav-links {
+  list-style: none;      /* Removes bullet points */
+  display: flex;         /* Aligns links horizontally */
+  gap: 20px;             /* Adds space between links */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Styling for the links */
+.nav-links a {
+  color: white;
+  text-decoration: none; /* Removes the underline */
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Special styling to make "Apply Now" look like a button */
+.btn-apply {
+  background-color: #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn-apply:hover {
+  background-color: #0056b3 !important; /* Forces button hover color */
+  color: white !important;
+}
