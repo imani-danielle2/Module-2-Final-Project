@@ -38,14 +38,13 @@ img {
     align-items: center;
 }
 a {
-    text-align: center;
-    line-height: 1.5;
-  text-decoration: none;
-  padding: 1%;
-    color: rgb(129, 22, 22);
-         margin: 0 5%;
-font-family:Georgia, 'Times New Roman', Times, serif; 
-    border: 1px solid black;
+    display: flex; 
+  justify-content: center; 
+  gap: 40px; 
+  align-items: center; 
+  padding: 20px; 
+  border: 2px solid #333; 
+  
 }
 p{
     color: rgb(129, 22, 22);
