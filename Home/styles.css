@@ -10,11 +10,9 @@ body {
 }
 
 .ServiceImage {
-    display: flex;
-  
-    align-items: center;
-    min-height: 100vh;      
-
+     display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 h1 {
@@ -29,7 +27,7 @@ h1 {
   text-align: center;
 }
 
-.banner {
+#banner img {
 align-items: center;
 display: flex;
 }
